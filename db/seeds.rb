@@ -53,6 +53,6 @@ Score.create(catalog:"BSC2009", description: "solo" ,name:"Concerto for Double B
 
 
 
-User.create(username: 'gui', password_digest: '123')
+User.create(username: 'gui', password: '123')
 
 puts "Completed!"

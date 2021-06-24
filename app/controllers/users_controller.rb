@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    lass UsersController < ApplicationController
+    
     wrap_parameters :user, include: [:username, :password]
 
     def index

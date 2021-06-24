@@ -33,7 +33,7 @@ class OrderItemsController < ApplicationController
     private
 
     def order_item_params
-        params.require(:order_item).permit(:user_id, :doughnut_id)
+        params.require(:order_item).permit(:user_id, :score_id)
     end
    
 end
