@@ -4,8 +4,17 @@ class OrderItemsController < ApplicationController
         render json: @order_items
     end
 
+#example
+    # def index
+    
+    #     @carts = current_user.carts
+    
+    #     render json: @carts
+    #   end
+
+
     def show
-        @order_item = OrderItem.find(params[:id])
+        @order_item = OrderItem.find_by(params[:id])
         render json: @order_item
     end
 
